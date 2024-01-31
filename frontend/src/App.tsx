@@ -1,4 +1,4 @@
-import { Description, Header, ImageSlider, LearnMore } from '.';
+import { Description, Header, ImageSlider, LearnMore, Lottery } from '.';
 import styles from './App.module.scss';
 
 function App() {
@@ -11,6 +11,9 @@ function App() {
       </section>
       <section className={styles.section__description}>
         <Description />
+      </section>
+      <section className={styles.section__lottery}>
+        <Lottery />
       </section>
     </>
   );
