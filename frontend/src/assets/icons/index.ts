@@ -7,3 +7,6 @@ export { YoutubeIcon } from './YoutubeIcon';
 export { LotteryIcon } from './LotteryIcon';
 export { CheckerOff } from './CheckerOff';
 export { CheckerOn } from './CheckerOn';
+export { AwesomeIcon } from './AwesomeIcon';
+export { MotionIcon } from './MotionIcon';
+export { ColorPalette } from './ColorPalette';
