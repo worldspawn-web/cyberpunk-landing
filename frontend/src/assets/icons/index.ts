@@ -5,3 +5,5 @@ export { TwitterIcon } from './TwitterIcon';
 export { VkIcon } from './VkIcon';
 export { YoutubeIcon } from './YoutubeIcon';
 export { LotteryIcon } from './LotteryIcon';
+export { CheckerOff } from './CheckerOff';
+export { CheckerOn } from './CheckerOn';
