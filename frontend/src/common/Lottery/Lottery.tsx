@@ -1,7 +1,22 @@
-import { LotteryIcon } from '../../assets';
+import { useState } from 'react';
+import { CheckerOff, CheckerOn, LotteryIcon } from '../../assets';
 import styles from './Lottery.module.scss';
 
 export const Lottery = () => {
+  const [isChecked, setChecked] = useState(false);
+
+  const CheckerInput = () => {
+    const icon = isChecked ? <CheckerOn /> : <CheckerOff />;
+    return (
+      <span
+        className={styles.lottery__checker}
+        onClick={() => setChecked(!isChecked)}
+      >
+        {icon}
+      </span>
+    );
+  };
+
   return (
     <>
       <div className={styles.lottery__wrapper}>
@@ -49,10 +64,7 @@ export const Lottery = () => {
                 <a className={styles.lottery__submitbtn}>Отправить</a>
               </div>
               <div className={styles.lottery__confirm}>
-                <input
-                  className={styles.lottery__confirm__checker}
-                  type="checkbox"
-                />
+                <CheckerInput />
                 <span className={styles.lottery__confirm__text}>
                   Согласен на обработку персональных данных
                 </span>

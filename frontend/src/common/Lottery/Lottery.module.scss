@@ -115,6 +115,8 @@ a {
 }
 
 .lottery__confirm {
+  display: flex;
+  align-items: center;
 }
 
 .lottery__confirm__text {
@@ -122,11 +124,15 @@ a {
   font-family: 'Roboto';
   font-weight: 300;
   font-size: 12px;
+  margin-left: 10px;
 }
 
-.lottery__confirm__checker {
-  background-color: transparent;
-  margin-right: 10px;
+.lottery__checker {
+  transition: 0.3s all ease;
+}
+
+.lottery__checker:hover {
+  transform: scale(1.1);
 }
 
 .lottery__prize {
