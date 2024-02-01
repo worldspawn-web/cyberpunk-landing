@@ -1,7 +1,5 @@
-// Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
-// Import Swiper styles
 import 'swiper/css';
 
 export const ImageSlider = () => {

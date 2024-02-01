@@ -1,5 +1,5 @@
-import { CDProjektRed, CyberpunkBanner } from '../../assets';
 import styles from './Footer.module.scss';
+import { CyberpunkBanner, CDProjektRed } from '../../assets';
 
 export const Footer = () => {
   return (

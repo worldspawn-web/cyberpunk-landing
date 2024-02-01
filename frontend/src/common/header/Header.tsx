@@ -1,13 +1,13 @@
+import styles from './Header.module.scss';
 import {
   CyberpunkBanner,
   YoutubeIcon,
-  VkIcon,
   FacebookIcon,
-  TwitterIcon,
   TwitchIcon,
   InstagramIcon,
+  VKIcon,
 } from '../../assets';
-import styles from './Header.module.scss';
+import { TwitterIcon } from '../../assets/icons/TwitterIcon';
 
 export const Header = () => {
   return (
@@ -16,7 +16,7 @@ export const Header = () => {
         <CyberpunkBanner />
         <section className={styles.header__icons__wrapper}>
           <YoutubeIcon />
-          <VkIcon />
+          <VKIcon />
           <FacebookIcon />
           <TwitterIcon />
           <TwitchIcon />

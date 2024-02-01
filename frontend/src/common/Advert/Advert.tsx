@@ -1,5 +1,5 @@
-import { AwesomeIcon, ColorPalette, MotionIcon } from '../../assets';
 import styles from './Advert.module.scss';
+import { ColorPaletteIcon, AwesomeIcon, MotionIcon } from '../../assets';
 
 export const Advert = () => {
   return (
@@ -28,7 +28,7 @@ export const Advert = () => {
               <tr>
                 <td>
                   <span className={styles.advert__features__icon}>
-                    <ColorPalette />
+                    <ColorPaletteIcon />
                   </span>
                 </td>
                 <td className={styles.advert__features__text}>

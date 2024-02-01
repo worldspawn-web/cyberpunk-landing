@@ -1,13 +1,13 @@
-import {
-  ActivationCode,
-  CollectionsIcon,
-  DiskIcon,
-  PCLogo,
-  PS4Logo,
-  StadiaLogo,
-  XboxOneLogo,
-} from '../../assets';
 import styles from './BuySection.module.scss';
+import {
+  DiskIcon,
+  CollectionsIcon,
+  PCLogo,
+  XboxOneLogo,
+  StadiaLogo,
+  PS4Logo,
+  ActivationCodeIcon,
+} from '../../assets';
 
 export const BuySection = () => {
   return (
@@ -32,7 +32,7 @@ export const BuySection = () => {
             </tr>
             <tr className={styles.buysection__table__row}>
               <td className={styles.buysection__icon}>
-                <ActivationCode />
+                <ActivationCodeIcon />
               </td>
               <td className={styles.buysection__features}>
                 Футляр с кодом для загрузки игры и дисками (PC)

@@ -1,12 +1,13 @@
-import { useState } from 'react';
-import { CheckerOff, CheckerOn, LotteryIcon } from '../../assets';
 import styles from './Lottery.module.scss';
+
+import { useState } from 'react';
+import { CheckerOnIcon, CheckerOffIcon, LotteryIcon } from '../../assets';
 
 export const Lottery = () => {
   const [isChecked, setChecked] = useState(false);
 
   const CheckerInput = () => {
-    const icon = isChecked ? <CheckerOn /> : <CheckerOff />;
+    const icon = isChecked ? <CheckerOnIcon /> : <CheckerOffIcon />;
     return (
       <span
         className={styles.lottery__checker}
