@@ -8,6 +8,7 @@ import {
   Lottery,
   Advert,
   BuySection,
+  Footer,
 } from '.';
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
       <Lottery />
       <Advert />
       <BuySection />
+      <Footer />
     </>
   );
 }
