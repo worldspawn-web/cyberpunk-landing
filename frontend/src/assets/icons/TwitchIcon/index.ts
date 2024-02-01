@@ -1,0 +1,1 @@
+export { TwitchIcon } from './TwitchIcon';

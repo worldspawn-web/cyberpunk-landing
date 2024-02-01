@@ -1,4 +1,4 @@
-export const ActivationCode = () => (
+export const ActivationCodeIcon = () => (
   <svg
     width="32"
     height="32"

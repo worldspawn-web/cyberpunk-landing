@@ -1,0 +1,1 @@
+export { LotteryIcon } from './LotteryIcon';

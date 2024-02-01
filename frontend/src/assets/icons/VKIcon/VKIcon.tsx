@@ -1,4 +1,4 @@
-export const VkIcon = () => (
+export const VKIcon = () => (
   <svg
     width="30"
     height="30"

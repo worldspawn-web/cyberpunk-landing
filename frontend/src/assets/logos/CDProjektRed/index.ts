@@ -1,0 +1,1 @@
+export { CDProjektRed } from './CDProjektRed';
