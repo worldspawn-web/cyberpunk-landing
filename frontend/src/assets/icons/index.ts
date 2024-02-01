@@ -10,3 +10,6 @@ export { CheckerOn } from './CheckerOn';
 export { AwesomeIcon } from './AwesomeIcon';
 export { MotionIcon } from './MotionIcon';
 export { ColorPalette } from './ColorPalette';
+export { ActivationCode } from './ActivationCode';
+export { DiskIcon } from './DiskIcon';
+export { CollectionsIcon } from './CollectionsIcon';
