@@ -7,6 +7,7 @@ import {
   LearnMore,
   Lottery,
   Advert,
+  BuySection,
 } from '.';
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
       <Description />
       <Lottery />
       <Advert />
+      <BuySection />
     </>
   );
 }
