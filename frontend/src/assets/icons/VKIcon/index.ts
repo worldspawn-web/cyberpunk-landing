@@ -1,1 +1,1 @@
-export { VKIcon } from './VkIcon';
+export { VKIcon } from './VKIcon';
