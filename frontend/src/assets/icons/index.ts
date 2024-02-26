@@ -10,6 +10,6 @@ export * from './InstagramIcon';
 export * from './LotteryIcon';
 export * from './MotionIcon';
 export * from './TwitchIcon';
-export * from './TwitchIcon';
+export * from './TwitterIcon';
 export * from './VKIcon';
 export * from './YoutubeIcon';
