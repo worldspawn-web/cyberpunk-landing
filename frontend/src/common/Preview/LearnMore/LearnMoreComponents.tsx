@@ -1,4 +1,6 @@
-.learnmore__container {
+import styled from 'styled-components';
+
+export const Wrapper = styled.div`
   position: absolute;
   right: 0;
   bottom: -50px;
@@ -18,9 +20,20 @@
   z-index: 999;
 
   font-size: 30px;
-}
 
-.learnmore__btn {
+  @media screen and (min-width: 1024px) {
+    right: 36px;
+    bottom: 0;
+
+    max-width: 624px;
+
+    align-items: flex-start;
+
+    font-size: 62px;
+  }
+`;
+
+export const LearnMoreButton = styled.a`
   width: 100%;
 
   padding: 20px 50px;
@@ -31,23 +44,10 @@
   text-align: center;
 
   font-size: 20px;
-}
 
-@media screen and (min-width: 1024px) {
-  .learnmore__container {
-    right: 36px;
-    bottom: 0;
-
-    max-width: 624px;
-
-    align-items: flex-start;
-
-    font-size: 62px;
-  }
-
-  .learnmore__btn {
+  @media screen and (min-width: 1024px) {
     width: fit-content;
 
     font-size: 24px;
   }
-}
+`;
