@@ -1,0 +1,1 @@
+export { StadiaLogo } from './StadiaLogo';

@@ -1,0 +1,1 @@
+export { CollectionsIcon } from './CollectionsIcon';

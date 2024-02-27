@@ -1,0 +1,1 @@
+export { XboxOneLogo } from './XboxOneLogo';

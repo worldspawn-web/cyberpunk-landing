@@ -1,28 +1,26 @@
 import {
   CyberpunkBanner,
   YoutubeIcon,
-  VkIcon,
   FacebookIcon,
-  TwitterIcon,
   TwitchIcon,
   InstagramIcon,
+  VKIcon,
+  TwitterIcon,
 } from '../../assets';
-import styles from './Header.module.scss';
+import { IconsWrapper, Wrapper } from './HeaderComponents';
 
 export const Header = () => {
   return (
-    <>
-      <div className={styles.header__banner__wrapper}>
-        <CyberpunkBanner />
-        <section className={styles.header__icons__wrapper}>
-          <YoutubeIcon />
-          <VkIcon />
-          <FacebookIcon />
-          <TwitterIcon />
-          <TwitchIcon />
-          <InstagramIcon />
-        </section>
-      </div>
-    </>
+    <Wrapper>
+      <CyberpunkBanner />
+      <IconsWrapper>
+        <YoutubeIcon />
+        <VKIcon />
+        <FacebookIcon />
+        <TwitterIcon />
+        <TwitchIcon />
+        <InstagramIcon />
+      </IconsWrapper>
+    </Wrapper>
   );
 };

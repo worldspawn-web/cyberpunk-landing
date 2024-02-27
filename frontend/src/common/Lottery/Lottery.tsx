@@ -1,81 +1,83 @@
 import { useState } from 'react';
-import { CheckerOff, CheckerOn, LotteryIcon } from '../../assets';
-import styles from './Lottery.module.scss';
+
+import { CheckerOnIcon, CheckerOffIcon, LotteryIcon } from '../../assets';
+import {
+  BackgroundTransition,
+  HeaderWrap,
+  LotteryChecker,
+  LotteryWrap,
+  SubHeader,
+  Wrapper,
+  Description,
+  FormWrap,
+  Form,
+  FormInput,
+  Filedrop,
+  FiledropLabel,
+  FiledropSubLabel,
+  SubmitWrap,
+  SubmitButton,
+  ConfirmChecker,
+  ConfirmLabel,
+  LotteryPrize,
+} from './LotteryComponents';
+
+import './Lottery.scss';
 
 export const Lottery = () => {
   const [isChecked, setChecked] = useState(false);
 
   const CheckerInput = () => {
-    const icon = isChecked ? <CheckerOn /> : <CheckerOff />;
+    const icon = isChecked ? <CheckerOnIcon /> : <CheckerOffIcon />;
     return (
-      <span
-        className={styles.lottery__checker}
-        onClick={() => setChecked(!isChecked)}
-      >
+      <LotteryChecker onClick={() => setChecked(!isChecked)}>
         {icon}
-      </span>
+      </LotteryChecker>
     );
   };
 
   return (
-    <>
-      <div className={styles.lottery__wrapper}>
-        <img
-          src="../public/section_transition_wtb.png"
-          className={styles.lottery__transition}
-        />
-        <div className={styles.lottery}>
-          <div className={styles.lottery__header__wrapper}>
-            <LotteryIcon />
-            <h1 className={styles.lottery__header}>Играй и выигрывай!</h1>
-          </div>
-          <div className={styles.lottery__description__wrapper}>
-            <p className={styles.lottery__description}>
-              Играй в <a>Cyberpunk 2077</a> и получи возможность выиграть
-              консоль <a>Xbox Series X</a> или <a>Sony PlayStation 5</a>!
-              Заполни форму ниже и приложи скриншот о покупке игры. Итоги
-              розыгрыша будут подведены 1 февраля. Удачи! ;)
-            </p>
-          </div>
-          <div className={styles.lottery__form__wrapper}>
-            <div className={styles.lottery__form}>
-              <form>
-                <input
-                  className={styles.lottery__form__input}
-                  type="text"
-                  placeholder="Как тебя зовут?"
-                ></input>
-                <input
-                  className={styles.lottery__form__input}
-                  type="text"
-                  placeholder="Твой e-mail"
-                ></input>
-              </form>
+    <Wrapper>
+      <BackgroundTransition src="../public/section_transition_wtb.png" />
+      <LotteryWrap>
+        <HeaderWrap>
+          <LotteryIcon />
+          <SubHeader>Играй и выигрывай!</SubHeader>
+        </HeaderWrap>
+        <Description>
+          Играй в <a>Cyberpunk 2077</a> и получи возможность выиграть консоль{' '}
+          <a>Xbox Series X</a> или <a>Sony PlayStation 5</a>! Заполни форму ниже
+          и приложи скриншот о покупке игры. Итоги розыгрыша будут подведены 1
+          февраля. Удачи! ;)
+        </Description>
 
-              <div className={styles.lottery__filedrop}>
-                <p className={styles.lottery__filedrop__header}>
-                  Прикрепить скриншот
-                </p>
-                <p className={styles.lottery__filedrop__subheader}>
-                  .png / .jpg / .pdf
-                </p>
-              </div>
-              <div className={styles.lottery__submitbtn__wrapper}>
-                <a className={styles.lottery__submitbtn}>Отправить</a>
-              </div>
-              <div className={styles.lottery__confirm}>
-                <CheckerInput />
-                <span className={styles.lottery__confirm__text}>
-                  Согласен на обработку персональных данных
-                </span>
-              </div>
-            </div>
-            <div className={styles.lottery__prize}>
-              <img src="../public/lottery_prize.png" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </>
+        <FormWrap>
+          <Form>
+            <FormInput type="text" placeholder="Как тебя зовут?"></FormInput>
+            <FormInput type="text" placeholder="Твой e-mail"></FormInput>
+
+            <Filedrop>
+              <FiledropLabel>Прикрепить скриншот</FiledropLabel>
+              <FiledropSubLabel>.png / .jpg / .pdf</FiledropSubLabel>
+            </Filedrop>
+
+            <SubmitWrap>
+              <SubmitButton>Отправить</SubmitButton>
+            </SubmitWrap>
+
+            <ConfirmChecker>
+              <CheckerInput />
+              <ConfirmLabel>
+                Согласен на обработку персональных данных
+              </ConfirmLabel>
+            </ConfirmChecker>
+          </Form>
+
+          <LotteryPrize>
+            <img src="../public/lottery_prize.png" />
+          </LotteryPrize>
+        </FormWrap>
+      </LotteryWrap>
+    </Wrapper>
   );
 };

@@ -1,4 +1,4 @@
-// import styles from './App.module.scss';
+import 'swiper/css';
 
 import {
   Description,
@@ -10,6 +10,8 @@ import {
   BuySection,
   Footer,
 } from '.';
+
+// import styles from './App.module.scss';
 
 function App() {
   return (
