@@ -1,10 +1,11 @@
 import { Autoplay } from 'swiper/modules';
+
+import { Wrapper } from './PreviewComponents';
 import { ImageSlider, LearnMore } from '..';
-import styles from './Preview.module.scss';
 
 export const Preview = () => (
-  <div className={styles.preview__wrapper}>
+  <Wrapper>
     <ImageSlider slidesPerView={1} modules={[Autoplay]} autoplay />
     <LearnMore />
-  </div>
+  </Wrapper>
 );
