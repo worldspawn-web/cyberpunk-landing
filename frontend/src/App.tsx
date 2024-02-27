@@ -1,3 +1,5 @@
+import 'swiper/css';
+
 import {
   Description,
   Header,
@@ -9,7 +11,6 @@ import {
   Footer,
 } from '.';
 
-import 'swiper/css';
 // import styles from './App.module.scss';
 
 function App() {
