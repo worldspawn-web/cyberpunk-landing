@@ -11,7 +11,7 @@ import {
   Footer,
 } from '.';
 
-// import styles from './App.module.scss';
+import './App.module.scss';
 
 function App() {
   return (
